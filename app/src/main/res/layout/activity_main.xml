@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.monkey.scrollview.MainActivity">
+    <com.monkey.scrollview.SlideScrollView
+        android:id="@+id/sc"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/shape_product_detail_ladder_rate">
+            <ListView
+                android:id="@+id/lv"
+                android:layout_width="match_parent"
+                android:layout_height="700px"
+                android:listSelector="@android:color/transparent"/>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1000dp"
+                android:src="@android:drawable/ic_dialog_alert"/>
+        </LinearLayout>
+
+    </com.monkey.scrollview.SlideScrollView>
+</LinearLayout>
